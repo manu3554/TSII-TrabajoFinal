@@ -1,0 +1,23 @@
+img {
+    width: 200px;
+    height: 100px;
+    
+}
+nav {
+    text-align: center;
+    width: 100%;
+}
+
+nav li {
+    background-color: black;
+    color: white;
+    padding: 15px;
+}
+#button {
+    padding: 0;
+}
+
+#button li {
+    display: inline;
+    
+}
