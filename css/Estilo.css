@@ -33,7 +33,7 @@ nav li ul {
 
 nav a {
     text-decoration: none;
-    color : white;
+    color : rgb(160, 52, 52);
     display: block;
     padding: 0 5em;
     transition: 0.4s;
