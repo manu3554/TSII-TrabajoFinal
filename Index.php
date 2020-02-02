@@ -1,7 +1,7 @@
 <html>
 
 <head>
-<link href="Estilo.css" rel="stylesheet" type="text/css">
+<link href="css/Estilo.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
@@ -34,6 +34,8 @@
         </li>
     </ul>
     </nav>
+
+
     
 
 
