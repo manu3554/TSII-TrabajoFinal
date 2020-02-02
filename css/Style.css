@@ -1,18 +1,3 @@
-/*TUVE QUE CAMBIAR DE CSS PORQUE NO PODIA CONTINUAR NO SÉ POR QUE, LOS ESTILOS SE HARAN CON "STYLE.CSS"*/
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-
 .logo {
     width: 225px;
     height: 60px;
@@ -34,9 +19,6 @@ body{
 
 /*ESTILOS GENERALES*/
 
-
-
-/*
 
 
 nav ul{
@@ -74,12 +56,8 @@ nav ul ul ul {
 }
 
 
-
-
-
 /*PRIMER NIVEL*/
 
-/*
 nav > ul {
     background: #333;
     display: table;
@@ -91,7 +69,6 @@ nav > ul > li {
 
 /*SEGUNDO NIVEL*/
 
-/*
 nav li li {
     background: #222;
     max-height: 0;
@@ -103,12 +80,3 @@ nav li:hover li{
     overflow: visible;
 }
 /*SI EN CASO SE AGREGA MAS SUB-SUBITEMS SE HACE UN CAMBIO /hover >ul >li*/ 
-
-
-
-
-
-
-
-
-
