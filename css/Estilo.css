@@ -1,9 +1,16 @@
-img {
+.logo {
     width: 225px;
     height: 60px;
     text-align: left;
     padding-left: 30px;
     padding-top: 10px;
+}
+
+.contacto {
+    float: right;
+    padding-right: 30px;
+    size: 30px;
+      
 }
 
 body{
@@ -33,7 +40,7 @@ nav li ul {
 
 nav a {
     text-decoration: none;
-    color : rgb(160, 52, 52);
+    color :white;
     display: block;
     padding: 0 5em;
     transition: 0.4s;
@@ -48,6 +55,8 @@ nav a:hover {
 nav ul ul ul {
     display: none;
 }
+
+
 
 
 
