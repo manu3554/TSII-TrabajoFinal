@@ -6,9 +6,11 @@
     padding-top: 10px;
 }
 
-p {
+.contacto {
     float: right;
     padding-right: 30px;
+    font-size: 20px;
+    font-style: oblique;
     
 }
 
@@ -48,7 +50,6 @@ nav a {
 nav a:hover {
     background: rgb(7, 153, 153);;
 }
-
 
 
 nav ul ul ul {
