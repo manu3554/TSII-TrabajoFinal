@@ -11,9 +11,44 @@
     padding-right: 30px;
     font-size: 20px;
     font-style: oblique;
+}
+
+.banner {
+    width: 90%;
+    height: 600px;
+    padding-right: 100px;
+    padding-left: 100px;
+}
+
+.iconos {
+    display: inline-flex;
+    width: 100%;
+    float: left;
+    justify-content: space-evenly;
+
+}
+
+
+.icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    margin-top: 15px;
+    
     
 }
 
+.bienvenidos {
+    color: rgb(4, 49, 49);
+    font-size: 30px;
+}
+
+.division {
+    width: 100%;
+    display: inline-flex;
+    float: left;
+    justify-content: space-evenly;
+}
 body{
     
     font-family:  -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -31,7 +66,7 @@ nav ul{
 }
 
 nav li {
-    line-height: 3rem;
+    line-height: 2.5rem;
     position: relative; 
 }
 
@@ -81,3 +116,10 @@ nav li:hover li{
     overflow: visible;
 }
 /*SI EN CASO SE AGREGA MAS SUB-SUBITEMS SE HACE UN CAMBIO /hover >ul >li*/ 
+
+table {
+    width: 350px;
+    height: 300px;
+    border: 1px solid black;
+    
+}
