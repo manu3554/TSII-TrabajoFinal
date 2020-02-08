@@ -18,31 +18,57 @@
     height: 600px;
     padding-right: 100px;
     padding-left: 100px;
+    padding-bottom: 10px;
+    
 }
 
 .iconos {
-    display: inline-flex;
+    display: flex;
     width: 100%;
     float: left;
     justify-content: space-evenly;
-
+    align-items: center;
+    
+    
 }
 
-
 .icon {
-    width: 50px;
-    height: 50px;
-    border-radius: 10px;
-    margin-top: 15px;
-    
+    width: 60px;
+    height: 60px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+
     
 }
 
 .bienvenidos {
     color: rgb(4, 49, 49);
-    font-size: 30px;
+    font-size: 45px;
+    font-family: monospace;
+    padding-left: 100px;
+    background-color: rgba(95, 158, 160, 0.493);
+    
 }
 
+.padre {
+    display: inline-flex;
+    width: 85%;
+    padding-left: 130px;
+    
+}
+
+.hijo {
+    display: block;
+    padding: 10px;
+    margin: auto;
+    
+}
+
+.imagen-med{
+    width: 400px 500px;
+    border: 8px solid #333;
+
+}
 .division {
     width: 100%;
     display: inline-flex;
@@ -66,7 +92,7 @@ nav ul{
 }
 
 nav li {
-    line-height: 2.5rem;
+    line-height: 3rem;
     position: relative; 
 }
 
