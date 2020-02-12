@@ -14,7 +14,7 @@ h3 {
 
 input {
     margin-left: 80px;
-    background-color: rgb(75, 53, 199);
+    background-color: tomato;
     color: white;
     padding: 10px;
 }
@@ -36,7 +36,7 @@ td{
 div#menu{
     background-color: rgb(95, 182, 197);
     color: white;
-    padding: 20px;
+    padding: 30px;
     width: 1400px;
     height: 100px;
     
@@ -70,4 +70,7 @@ div#h1{
     margin-top: 20px;
     
     
+}
+input:hover{
+    background-color: teal;
 }

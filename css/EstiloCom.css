@@ -1,0 +1,29 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+div#h1{
+    background-color: rgb(95, 182, 197);
+    padding: 30px;
+    color: white;
+}
+h1{
+    margin-left: 40px;
+}
+div#form{
+    margin-left: 50px;
+}
+
+#boton{
+    margin-left: 50px;
+    padding: 10px;
+    background-color: tomato;
+}
+#boton:hover{
+    background-color: teal;
+}
