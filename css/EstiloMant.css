@@ -1,0 +1,33 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+table{
+    border-collapse: collapse;
+}
+td{
+    padding: 30px;
+}
+body{
+    
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+div#header{
+    background-color: rgb(95, 182, 197);
+    padding: 30px;
+    color: white;
+}
+h1{
+    margin-left: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+div#cuerpo{
+    margin-left: 50px;
+}
+input{
+    background-color: tomato;
+    padding: 10px;
+}
+input:hover{
+    background-color: teal;
+}
