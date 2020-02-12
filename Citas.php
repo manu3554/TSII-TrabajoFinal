@@ -18,7 +18,7 @@
                 <input type="text" name="txtEdad"><br><br>
                 <label>Codigo de seguridad</label>
                 <input type="text" name="txtCodigo"><br>
-                <label>Recuerde que su codigo de seguridad, se le brinda al momento de registrarse.</label><br><br>
+                <label>(Recuerde que su codigo de seguridad, se le brinda al momento de registrarse.)</label><br><br>
                 <label> Ingrese el &aacute;rea en el que se encuentra interesado(a) :</label>
                 <select name="txtareas" >
                     <option value="Cardiologia">Cardiologia</option>
