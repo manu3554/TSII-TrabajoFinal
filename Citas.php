@@ -54,7 +54,7 @@
         echo "Su reserva esta en proceso. ";
         echo "Sirvase a pasar por nuestras instalaciones.";
         
-        $dns="mysql:dbname=db_citas;host=localhost";
+        $dns="mysql:dbname=db_essalud;host=localhost";
         $user="root";
         $pass="";
     
