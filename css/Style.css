@@ -152,7 +152,7 @@ nav a {
     color :white;
     display: block;
     padding: 0 5em;
-    transition: 0.4s;
+    transition: 0.4s;   
 }
 
 nav a:hover {
@@ -186,11 +186,14 @@ nav li li {
     background: rgb(12, 40, 63);
     max-height: 0;
     overflow: hidden;
+    
 }
 
 nav li:hover li{
     max-height: 500px;
     overflow: visible;
 }
+
+
 /*SI EN CASO SE AGREGA MAS SUB-SUBITEMS SE HACE UN CAMBIO /hover >ul >li*/ 
 
