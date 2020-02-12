@@ -45,12 +45,28 @@
         echo "------------------------------------------------- <br>";
         echo "DNI : $dni <br>";
         echo "Edad : $edad <br>";
-        echo "Codigo de seguridad : $edad <br>";
+        echo "Codigo de seguridad : $codigo <br>";
         echo "&Aacute;rea escogida : $area <br>";
         echo "<br>";
         echo "Hemos procedido a hacer su reserva.";
         echo "Sirvase a pasar por nuestras instalaciones";
         
+        $dns="mysql:dbname=db_citas;host=localhost";
+        $user="root";
+        $pass="";
+    
+        try {
+            $con = new PDO($dns,$user,$pass);
+            //$sql = "create table citas (codigo int(5), dni int(9), edad int(2), area varchar(25))";
+            $insertar = "INSERT INTO citas VALUES ('$codigo', '$dni', '$edad', '$area')";
+
+            //$con->exec($sql);
+            $con->exec($insertar);
+            echo "<br>";
+            echo "RESERVA EXITOSA.";  
+        } catch (PDOException $e) {
+            echo $e->getMessage();
+        }
         
     }
 
