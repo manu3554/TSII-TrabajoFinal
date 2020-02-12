@@ -6,7 +6,10 @@
         initial-scale=1.0, maximun-scale=1.0, minimun-scale=1.0">  
     </head>
     <body>
+        <div id=titulo><h1>CITAS</h1></div>
         <form action="Citas.php" method="POST">
+            <br><br><br><br>
+            <br><br><br><br>
             <fieldset>
                 <legend>Proceso para reserva de cita</legend>
                 <label>DNI:</label>

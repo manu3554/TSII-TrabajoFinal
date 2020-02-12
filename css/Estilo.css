@@ -4,10 +4,19 @@ form{
     width: 960px;
     text-align: center;
     position: absolute;
-    top: 15%;
+    top: 20%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+div#titulo {
+    background-color: rgb(95, 182, 197);
+    padding: 5px;
+    color: white;
+    padding-left: 70px;
+}
+
+
 
 
 

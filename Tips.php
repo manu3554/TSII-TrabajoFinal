@@ -6,7 +6,7 @@
         initial-scale=1.0, maximun-scale=1.0, minimun-scale=1.0">   
     </head>
     <body>
-        <h1>TIPS Y CONSEJOS</h1><br>
+        <div id="titulo"><h1>TIPS Y CONSEJOS</h1></div><br>
         <form action="Tips.php" method="POST">
             <fieldset><legend>&nbsp;Datos&nbsp;</legend>
                 <label>Nombre :</label>
@@ -28,7 +28,7 @@
                 </select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <input type="submit" name="btnProcesar" value="PROCESAR">
             </fieldset>
-        </form><br><br><br><br><br><br>
+        </form><br><br><br><br>
         <p align="center">OBS: Por favor, escoga el &aacute;rea de su inter&eacute;s.</p>
         <?php
 
