@@ -48,8 +48,8 @@
         echo "Codigo de seguridad : $codigo <br>";
         echo "&Aacute;rea escogida : $area <br>";
         echo "<br>";
-        echo "Hemos procedido a hacer su reserva.";
-        echo "Sirvase a pasar por nuestras instalaciones";
+        echo "Su reserva esta en proceso. ";
+        echo "Sirvase a pasar por nuestras instalaciones.";
         
         $dns="mysql:dbname=db_citas;host=localhost";
         $user="root";
@@ -62,7 +62,7 @@
 
             //$con->exec($sql);
             $con->exec($insertar);
-            echo "<br>";
+            echo "<br><br>";
             echo "RESERVA EXITOSA.";  
         } catch (PDOException $e) {
             echo $e->getMessage();
