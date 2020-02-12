@@ -1,21 +1,24 @@
 <html>
     <head>
-        <title>Reserva tu Cita :</title>
+        <title>Reserva tu Cita </title>
         <link href="css/Estilo.css" rel="stylesheet" type="text/css">
         <meta name="viewport" content="width=device-width, user-scalable=no,
         initial-scale=1.0, maximun-scale=1.0, minimun-scale=1.0">  
     </head>
     <body>
+        <div id="tituloCitas"><h1>CITAS</h1></div>
+        
         <form action="Citas.php" method="POST">
+            <br><br><br><br><br><br><br><br>
             <fieldset>
-                <legend>Proceso para reserva de cita</legend>
+                <legend>&nbsp;Proceso para reserva de cita&nbsp;</legend><br>
                 <label>DNI:</label>
                 <input type="text" name="txtDNI"><br><br>
                 <label>Edad: </label>
                 <input type="text" name="txtEdad"><br><br>
                 <label>Codigo de seguridad</label>
                 <input type="text" name="txtCodigo"><br>
-                <label>Recuerde que su codigo de seguridad, se le brinda al momento de registrarse.</label><br><br>
+                <label>(Recuerde que su codigo de seguridad, se le brinda al momento de registrarse.)</label><br><br>
                 <label> Ingrese el &aacute;rea en el que se encuentra interesado(a) :</label>
                 <select name="txtareas" >
                     <option value="Cardiologia">Cardiologia</option>
@@ -26,7 +29,7 @@
                     <option value="Fisioterapia">Fisioterapia</option>
                     <option value="Gestante">Gestante</option>
                 </select><br><br>
-                <input type="submit" value="Procesar" name="btnProcesar">
+                <input type="submit" value="Procesar" name="btnProcesar"><br><br>
             </fieldset>
         </form>
     <?php
@@ -55,6 +58,8 @@
         $user="root";
         $pass="";
     
+            //PRIMERO CREAR UNA BASE DE DATOS EN phpMyadmin: db_citas
+            //PARA AÑADIR NUEVOS DATOS A LA BD; Modificar codigo 
         try {
             $con = new PDO($dns,$user,$pass);
             //$sql = "create table citas (codigo int(5), dni int(9), edad int(2), area varchar(25))";

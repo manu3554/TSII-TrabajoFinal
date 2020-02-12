@@ -186,6 +186,7 @@ nav li li {
     background: rgb(12, 40, 63);
     max-height: 0;
     overflow: hidden;
+    font-size: 15px;
 }
 
 nav li:hover li{

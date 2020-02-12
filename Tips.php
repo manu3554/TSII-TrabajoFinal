@@ -6,9 +6,9 @@
         initial-scale=1.0, maximun-scale=1.0, minimun-scale=1.0">   
     </head>
     <body>
-        <h1>TIPS Y CONSEJOS</h1><br>
+        <div id="tituloTips"><h1>TIPS Y CONSEJOS</h1></div>
         <form action="Tips.php" method="POST">
-            <fieldset><legend>&nbsp;Datos&nbsp;</legend>
+            <fieldset><legend>&nbsp;Datos&nbsp;</legend><br>
                 <label>Nombre :</label>
                 <input type="text" name="txtNombre">&nbsp;&nbsp;&nbsp;&nbsp;
                 <label>Edad :</label>
@@ -26,9 +26,9 @@
                     <option value="Oncologia">Oncologia</option>
                     <option value="EsSalud-Gestante">EsSalud-Gestante</option>
                 </select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <input type="submit" name="btnProcesar" value="PROCESAR">
+                <input type="submit" name="btnProcesar" value="PROCESAR"><br><br>
             </fieldset>
-        </form><br><br><br><br><br><br>
+        </form>
         <p align="center">OBS: Por favor, escoga el &aacute;rea de su inter&eacute;s.</p>
         <?php
 
@@ -36,9 +36,9 @@
             $nombre = $_POST["txtNombre"];
             $edad = $_POST["txtEdad"];
             $area = $_POST["txtarea"];
-            echo "<br><br><br>";
+            echo "<br><br><br><br><br><br><br><br><br>";
             echo "Hola $nombre , te queremos dar la bienvenida a nuestra página de Tips y Consultas. Espero te sean &uacute;tiles.<br> <br> ";
-            echo "Requerimos saber tu edad para poder darte la mejor recomendaciones posible acorde a tu edad. Gracias<br> <br> ";
+            echo "Requerimos saber tu edad para poder darte la mejor recomendaci&oacute;n posible acorde a tu edad. Gracias<br> <br> ";
             echo "Recomendaciones para el &aacute;rea de $area : <br><br>";
 
             switch ($area) {
