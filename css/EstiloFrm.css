@@ -50,6 +50,7 @@ div#parrafo{
 
 h1{
     margin-left: 80PX;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 div#img{
@@ -59,7 +60,12 @@ div#img{
     float: left;
     
     
-    
+}
+#radio{
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    background-size: 100% auto;
+    background-position: 50%;
 }
 
 div#h1{
