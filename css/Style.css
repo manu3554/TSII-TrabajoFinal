@@ -1,16 +1,25 @@
 .logo {
-    width: 225px;
-    height: 60px;
+    width: 320px;
+    height: 80px;
     float: left;
     padding-left: 30px;
     padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 0;
+}
+
+div#lo {
+    background-color: rgb(27, 88, 150);
+    display: flex;
 }
 
 .contacto {
     float: right;
+    padding-left: 1350px;
     padding-right: 30px;
     font-size: 20px;
     font-style: oblique;
+    color: white;
 }
 
 .banner {
@@ -152,7 +161,7 @@ nav a {
     color :white;
     display: block;
     padding: 0 5em;
-    transition: 0.4s;
+    transition: 0.4s;   
 }
 
 nav a:hover {
@@ -193,5 +202,7 @@ nav li:hover li{
     max-height: 500px;
     overflow: visible;
 }
+
+
 /*SI EN CASO SE AGREGA MAS SUB-SUBITEMS SE HACE UN CAMBIO /hover >ul >li*/ 
 
