@@ -1,6 +1,6 @@
 .logo {
-    width: 320px;
-    height: 80px;
+    width: 380px;
+    height: 85px;
     float: left;
     padding-left: 30px;
     padding-top: 10px;
@@ -8,18 +8,14 @@
     margin: 0;
 }
 
-div#lo {
-    background-color: rgb(27, 88, 150);
-    display: flex;
-}
 
 .contacto {
     float: right;
-    padding-left: 1350px;
+    
     padding-right: 30px;
     font-size: 20px;
     font-style: oblique;
-    color: white;
+    color:rgb(0, 0, 0);
 }
 
 .banner {
@@ -51,12 +47,13 @@ div#lo {
 }
 
 .subtitulo {
+    padding:5px;
     color: rgb(4, 49, 49);
     font-size: 45px;
     font-family: monospace;
     margin: 0px;
-    padding-left: 100px;
-    background-color: rgba(95, 158, 160, 0.493);  
+    background-color: rgba(95, 158, 160, 0.493); 
+    text-align: center; 
 }
 
 
@@ -206,3 +203,7 @@ nav li:hover li{
 
 /*SI EN CASO SE AGREGA MAS SUB-SUBITEMS SE HACE UN CAMBIO /hover >ul >li*/ 
 
+table {
+    border: 1px solid black;
+
+}
