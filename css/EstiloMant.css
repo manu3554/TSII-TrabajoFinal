@@ -2,12 +2,8 @@
     padding: 0px;
     margin: 0px;
 }
-table{
-    border-collapse: collapse;
-}
-td{
-    padding: 30px;
-}
+
+
 body{
     
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -24,10 +20,4 @@ h1{
 div#cuerpo{
     margin-left: 50px;
 }
-input{
-    background-color: tomato;
-    padding: 10px;
-}
-input:hover{
-    background-color: teal;
-}
+
