@@ -16,7 +16,8 @@
     
     
             echo "<div id=form>";
-            echo "<form action = '' method= 'post'>";
+            echo "<form action=Compra.php method=post>";
+                    echo "<input type=hidden name=med value=$med>";
                     echo "Nombre de quien recibe:<br/>";
                     echo "<input type=text name=nombreR placeholder='Ingrese Nombre'><br/><br/>";
                     echo "Direccion:<br/>";
@@ -27,9 +28,9 @@
                 
             echo "</form>";
             echo "</div>";
-            
-    
-                $nombreR = $_POST['nombreR'];
+        }
+        if (isset($_POST['nombreR'],$_POST['direccion'],$_POST['distrito'])) {
+            $nombreR = $_POST['nombreR'];
                 $direccion = $_POST['direccion'];
                 $distrito = $_POST['distrito'];
     
@@ -41,7 +42,7 @@
                 try {
                     $con = new PDO($dns,$user,$pass);
     
-                    $sql = "INSERT INTO compras VALUES('$nombreR','$direccion','$distrito')";
+                    $sql = "INSERT INTO compras VALUES('$med','$nombreR','$direccion','$distrito')";
     
                     $con->exec($sql);
     
@@ -50,6 +51,11 @@
                     echo "Error".$e->getMessage();
                 }
         }
+            
+            
+    
+                
+        
         
 
         ?>
