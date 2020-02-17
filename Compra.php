@@ -30,7 +30,7 @@
             echo "</div>";
         }
         if (isset($_POST['nombreR'],$_POST['direccion'],$_POST['distrito'])) {
-            $nombreR = $_POST['nombreR'];
+                $nombreR = $_POST['nombreR'];
                 $direccion = $_POST['direccion'];
                 $distrito = $_POST['distrito'];
     

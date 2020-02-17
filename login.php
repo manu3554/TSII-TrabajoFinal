@@ -6,47 +6,65 @@
     </head>
     <body>
         
-        <form action="login.php" method="POST">
-            <fieldset>
-                <legend><h1>INISIO DE SESION</h1></legend>
-                Usuario:<br/>
-                <input type="text" name="usuario" ><br/>
-                Contrase&ntilde;a:<br/>
-                <input type="text" name="contraseña"><br/><br/>
-                <input type="submit" value="Entrar" id="boton" >
-            </fieldset>
-        </form>
         <?php
-            if (isset($_POST['usuario'],$_POST['contraseña'])) {
+        $med = $_POST['med'];
+        
+        echo "<form action=login.php method=POST>";
+        echo  "<fieldset>";
+             echo  " <legend><h1>INICIO DE SESION</h1></legend>";
+              echo "  Usuario:<br/>";
+               echo "<input type=text name=usuario ><br/>";
+               echo "Contrase&ntilde;a:<br/>";
+                echo "<input type=text name=contrasena><br/><br/>";
+                echo "<input type = hidden name=$med >";
+                echo "<input type=submit value=Entrar id=boton >";
+            echo"</fieldset>";
+        echo "</form>";
+        
+            if (isset($_POST['usuario'])) {
+                $med = $_POST['$med'];
+                echo $med;
                 $usuario = $_POST['usuario'];
-                $contraseña = $_POST['contraseña'];
+                $contrasena = $_POST['contrasena'];
 
                 $dns = "mysql:dbname=farmacia;host=localhost";
                 $user = "root";
                 $pass = "";
+                try {
+                    $con = new PDO($dns,$user,$pass);
 
-                $con = new PDO($dns,$user,$pass);
-
-                $row = $con->query("SELECT * FROM clientes WHERE usuario='$usuario' and contraseña='$contraseña'");
-
-                $contador = 0;
-                while ($rows= $row->fetch()) {
-                    $contador = $contador + 1;    
+                
+                    $row = $con->query("SELECT * FROM clientes WHERE usuario='$usuario'and contrasena='$contrasena'");
+    
                     
+                    $contador = 0;
+                    while ($rows= $row->fetch()) {
+                        $contador = $contador+1;
+                        
+                    }
+    
+                    if($contador>0 ){
+                        
+                        header("Location:mision.php?user=$usuario, ?med=$med");
+                        
+                        
+                    }else{
+                        echo "No entraste";
+                    }
+                } catch (PDOException $e) {
+                    echo "Error:".$e->getMessage();
                 }
-
-                if($contador>0){
-                    echo "Entraste";
-                }else{
-                    echo "No entraste";
-                }
-                
-                
-
-                
             }else{
-                echo "Rellene los datos";
+                echo "Rellene";
             }
+                
+            
+
+                
+                
+                
+
+                
             
 
             
