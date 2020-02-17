@@ -29,14 +29,18 @@
 
                 $row = $con->query("SELECT * FROM clientes WHERE usuario='$usuario' and contraseña='$contraseña'");
 
-                if ($row!=null) {
-                    while ($rows= $row->fetch()) {
-                        
-                        echo "Felicidades entro";
-                    }
-                }else{
-                    echo "No entro";
+                $contador = 0;
+                while ($rows= $row->fetch()) {
+                    $contador = $contador + 1;    
+                    
                 }
+
+                if($contador>0){
+                    echo "Entraste";
+                }else{
+                    echo "No entraste";
+                }
+                
                 
 
                 
