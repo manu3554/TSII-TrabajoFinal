@@ -26,6 +26,14 @@ div#tituloTips {
     padding: 8px; 
 }
 
+div#tituloPromociones {
+    background-color: rgb(12, 77, 52);
+    color: white;
+    display: flex;
+    padding: 8px; 
+}
+
+
 
 h1 {
     margin-left: 70px;
@@ -43,6 +51,23 @@ body {
     float: left;
     justify-content: space-evenly;
 }
+
+.img-tips {
+    width: 400px;
+    height: 450px;
+}
+
+.IrTienda {
+    text-align: center;   
+}
+.IrTienda a{
+    text-decoration: none; 
+    background-color: rgb(0, 0, 0);
+    color: antiquewhite;
+    padding: 10px;
+}
+
+
 
 
 

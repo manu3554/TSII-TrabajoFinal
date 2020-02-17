@@ -4,7 +4,7 @@
     
     </head>
     <body>
-<div id="tituloCitas"><h1>PROMOCIONES DE VERANO</h1></div>
+<div id="tituloPromociones"><h1>PROMOCIONES DE VERANO</h1></div>
         <br><br>
 <div class="division" >
         <table >    
@@ -40,11 +40,13 @@
         <table >          
             <th><a href=""><img src="img/promo9.jpg" alt="Tips y consejos" class="img-tips"></a></th>
         </table>
+        
 </div>
 <br><br><br><br>
 
-    <a href="Farmacia.html">COMPRAR</a>
-        <?php
-        ?>
+<div>
+<div class="IrTienda"><a href="Farmacia.html">IR A PAGINA DE COMPRAS</a> </div>
+</div>
+
     </body>
 </html>
