@@ -12,41 +12,53 @@
                 Usuario:<br/>
                 <input type="text" name="usuario" ><br/>
                 Contrase&ntilde;a:<br/>
-                <input type="text" name="contraseña"><br/><br/>
+                <input type="text" name="contrasena"><br/><br/>
                 <input type="submit" value="Entrar" id="boton" >
             </fieldset>
         </form>
         <?php
-            if (isset($_POST['usuario'],$_POST['contraseña'])) {
+            if (isset($_POST['usuario'])) {
                 $usuario = $_POST['usuario'];
-                $contraseña = $_POST['contraseña'];
+                $contrasena = $_POST['contrasena'];
 
                 $dns = "mysql:dbname=farmacia;host=localhost";
                 $user = "root";
                 $pass = "";
+                try {
+                    $con = new PDO($dns,$user,$pass);
 
-                $con = new PDO($dns,$user,$pass);
-
-                $row = $con->query("SELECT * FROM clientes WHERE usuario='$usuario' and contraseña='$contraseña'");
-
-                $contador = 0;
-                while ($rows= $row->fetch()) {
-                    $contador = $contador + 1;    
+                
+                    $row = $con->query("SELECT * FROM clientes WHERE usuario='$usuario'and contrasena='$contrasena'");
+    
                     
+                    $contador = 0;
+                    while ($rows= $row->fetch()) {
+                        $contador = $contador+1;
+                        
+                    }
+    
+                    if($contador>0 ){
+                        
+                        header("Location:mostrarDatos.php?user=$usuario");
+                        
+                        
+                    }else{
+                        echo "No entraste";
+                    }
+                } catch (PDOException $e) {
+                    echo "Error:".$e->getMessage();
                 }
-
-                if($contador>0){
-                    echo "Entraste";
-                }else{
-                    echo "No entraste";
-                }
-                
-                
-
-                
             }else{
-                echo "Rellene los datos";
+                echo "Rellene";
             }
+                
+            
+
+                
+                
+                
+
+                
             
 
             
