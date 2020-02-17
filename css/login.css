@@ -1,0 +1,12 @@
+body{
+    margin-left: 500px;
+    margin-top: 180px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#boton{
+    margin-left: 100px;
+}
+fieldset{
+    margin-right: 530px;
+    color:rgb(57, 146, 175);
+}
