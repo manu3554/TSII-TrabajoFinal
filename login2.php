@@ -46,7 +46,7 @@
     
                     if($contador>0 ){
                         
-                        header("Location:Compra.php?user=$usuario & med=$med & precio=$precio");
+                        header("Location:mostrarDatos.php?usuario=$usuario");
                         
                         
                     }else{
