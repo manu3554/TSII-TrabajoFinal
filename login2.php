@@ -7,10 +7,8 @@
     <body>
         
         <?php
-       
-       
         
-        echo "<form action=login.php method=POST>";
+        echo "<form action=login2.php method=POST>";
         echo  "<fieldset>";
              echo  " <legend><h1>INICIO DE SESION</h1></legend>";
               echo "  Usuario:<br/>";
