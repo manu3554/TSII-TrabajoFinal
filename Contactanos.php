@@ -12,7 +12,7 @@
         </fieldset>
         <br><br>
         <h1>ENVIANOS UN CORREO</h1>
-        <form>
+        <form action="" method="POST">
             <fieldset>
                 <br>
                 <label>Nombre :</label>
@@ -26,10 +26,12 @@
                 <input type="submit" name="btnEnviar" value="Enviar correo">
                 <br>
             </fieldset>
+            <br><br>
+            <a href="Index.html"><p style="text-align:right">REGRESAR</p></a>
         </form>
 
-        <?php
-
+       
+       <?php
         ?>
     </body>
 </html>
