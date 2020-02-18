@@ -37,7 +37,8 @@
 
     
     <?php
-        if (isset($_POST['nombre'],$_POST['apellido'],$_POST['dni'],$_POST['sexo'],$_POST['telefono'],$_POST['usuario'],$_POST['contra'])) {
+        echo "<link rel=stylesheet type=text/css href=css/EstiloReg.css> ";
+        if (isset($_POST['nombre'])) {
             $dns = "mysql:dbname=farmacia;host=localhost";
             $user = "root";
             $pass = "";
@@ -54,20 +55,7 @@
     
             try {
                 $con = new PDO($dns,$user,$pass);
-                /*$con->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
-    
-                $stmt=$con->prepare("INSERT INTO clientes VALUES(:nombre, :apellido, :dni, :sexo, :telefono, :usuario
-                , :contraseña)");
-    
-                $stmt->bindParam(':nombre',$nombre);
-                $stmt->bindParam(':apellido',$apellido);
-                $stmt->bindParam(':dni',$dni);
-                $stmt->bindParam(':sexo',$sexo);
-                $stmt->bindParam(':telefono',$telefono);
-                $stmt->bindParam(':usuario',$usuario);
-                $stmt->bindParam(':contraseña',$contraseña);
-    
-                $stmt->execute();*/
+                
                 $sql = "INSERT INTO clientes VALUES('$nombre','$apellido','$dni','$sexo','$telefono','$usuario','$contraseña')";
                 $con->exec($sql);
                 echo "Registrado correctamente";
@@ -78,7 +66,7 @@
             }
             $con = null; 
         }else{
-            echo "Rellene los datos";
+            echo "<h4>Rellene los datos</h4>";
         }
         
 
