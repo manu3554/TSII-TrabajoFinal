@@ -14,7 +14,7 @@
               echo "  Usuario:<br/>";
                echo "<input type=text name=usuario ><br/>";
                echo "Contrase&ntilde;a:<br/>";
-                echo "<input type=text name=contraseña><br/><br/>";
+                echo "<input type=password name=contraseña><br/><br/>";
                 // variables importadas
                 //echo "<input type = hidden name=med value=$med >";
                 //echo "<input type = hidden name=precio value=$precio >";
