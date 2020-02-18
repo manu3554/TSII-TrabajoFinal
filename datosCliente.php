@@ -1,4 +1,5 @@
 <?php
+    
     echo "<h1>Datos de </h1>";
     $dns = "mysql:dbname=Farmacia;host=localhost";
     $user= "root";
