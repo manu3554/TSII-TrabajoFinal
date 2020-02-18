@@ -23,8 +23,8 @@
         echo "</form>";
         
             if (isset($_POST['usuario'])) {
-                $precio = $_POST['precio'];
-                $med = $_POST['med'];
+                //$precio = $_POST['precio'];
+                //$med = $_POST['med'];
                 $usuario = $_POST['usuario'];
                 $contraseña = $_POST['contraseña'];
 
