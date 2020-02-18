@@ -7,8 +7,10 @@
     </head>
     <body>
         <?php
-        if (isset($_POST['med'])) {
-            $med = $_POST['med'];
+        if (isset($_GET['med'])) {
+            $med = $_GET['med'];
+            $usuario = $_GET['user'];
+            $precio = $_GET['precio'];
             echo "<div id='h1'><h1>Proceso para compra de ", $med, "</h1></div>";
             echo "<br/>";
             echo "<br/>";
@@ -17,7 +19,10 @@
     
             echo "<div id=form>";
             echo "<form action=Compra.php method=post>";
+                    // variables importadas
                     echo "<input type=hidden name=med value=$med>";
+                    echo "<input type=hidden name=usuario value=$usuario>";
+                    echo "<input type=hidden name=precio value=$precio>";
                     echo "Nombre de quien recibe:<br/>";
                     echo "<input type=text name=nombreR placeholder='Ingrese Nombre'><br/><br/>";
                     echo "Direccion:<br/>";
@@ -29,12 +34,14 @@
             echo "</form>";
             echo "</div>";
         }
-        if (isset($_POST['nombreR'],$_POST['direccion'],$_POST['distrito'])) {
+        if (isset($_POST['nombreR'])) {
                 $nombreR = $_POST['nombreR'];
                 $direccion = $_POST['direccion'];
                 $distrito = $_POST['distrito'];
-    
-    
+                $med = $_POST['med'];
+                $usuario = $_POST['usuario'];
+                $precio = $_POST['precio'];
+
                 $dns="mysql:dbname=farmacia;host=localhost";
                 $user= "root";
                 $pass= "";
@@ -42,10 +49,13 @@
                 try {
                     $con = new PDO($dns,$user,$pass);
     
-                    $sql = "INSERT INTO compras VALUES('$med','$nombreR','$direccion','$distrito')";
+                    $sql = "INSERT INTO compras VALUES('$usuario','$med','$precio','$nombreR','$direccion','$distrito')";
     
                     $con->exec($sql);
-    
+
+                    header("Location:graciasCompra.php?user=$usuario & med=$med");
+                    
+
                     echo "Compra realizada";
                 } catch (PDOException $e) {
                     echo "Error".$e->getMessage();
