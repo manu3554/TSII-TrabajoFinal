@@ -15,6 +15,9 @@
                echo "<input type=text name=usuario ><br/>";
                echo "Contrase&ntilde;a:<br/>";
                 echo "<input type=text name=contraseña><br/><br/>";
+                // variables importadas
+                //echo "<input type = hidden name=med value=$med >";
+                //echo "<input type = hidden name=precio value=$precio >";
                 echo "<input type=submit value=Entrar id=boton >";
             echo"</fieldset>";
         echo "</form>";
@@ -43,7 +46,7 @@
     
                     if($contador>0 ){
                         
-                        header("Location:mostrarDatos.php?usuario=$usuario ");
+                        header("Location:Compra.php?user=$usuario & med=$med & precio=$precio");
                         
                         
                     }else{
@@ -54,7 +57,16 @@
                 }
             }else{
                 echo "Rellene";
-            }            
+            }
+                
+            
+
+                
+                
+                
+
+                
+            
 
             
         ?>
