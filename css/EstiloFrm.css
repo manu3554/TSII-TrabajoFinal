@@ -22,7 +22,6 @@ H2{
     text-align: center;
 }
 body{
-    
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
@@ -79,4 +78,8 @@ div#h1{
 }
 input:hover{
     background-color: teal;
+}
+label{
+    margin-left: 50px;
+    color: brown;
 }
