@@ -4,12 +4,12 @@
         <link rel="stylesheet" type="text/css" href="css/login.css">
 
     </head>
-    <body>
+    <body style="background-image:url(img/imgF.jpg)">
         
         <?php
         
         echo "<form action=login2.php method=POST>";
-        echo  "<fieldset>";
+        echo  "<fieldset style='color:white'>";
              echo  " <legend><h1>INICIO DE SESION</h1></legend>";
               echo "  Usuario:<br/>";
                echo "<input type=text name=usuario ><br/>";
@@ -56,19 +56,13 @@
                     echo "Error:".$e->getMessage();
                 }
             }else{
-                echo "Rellene";
+                echo "Complete con sus datos por favor <br/>";
             }
-                
-            
-
-                
-                
-                
-
-                
-            
-
             
         ?>
+        Si todavia no tiene una cuenta puede registrarse aca:
+        <form action ="registrate.php" method="post">
+            <input type="submit" value="Ir a registrarse" style="margin-left:90px">
+        </form>
     </body>
 </html>
