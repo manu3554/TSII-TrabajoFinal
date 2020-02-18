@@ -53,7 +53,7 @@
     
                     $con->exec($sql);
 
-                    header("Location:graciasCompra.php?user=$usuario & med=$med");
+                    header("Location:graciasCompra.html");
                     
 
                     echo "Compra realizada";
