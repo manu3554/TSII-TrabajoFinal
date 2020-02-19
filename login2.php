@@ -38,9 +38,8 @@
     
                     
                     $contador = 0;
-                    while ($rows= $row->fetch()) {
+                    while ($rows=$row->fetch()){
                         $contador = $contador+1;
-                        
                     }
     
                     if($contador>0 ){
