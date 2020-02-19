@@ -23,8 +23,9 @@
                 echo "<input type=submit value=Entrar id=boton >";
             echo"</fieldset>";
         echo "</form>";
+       
         
-            if (isset($_POST['usuario'])) {
+           if (isset($_POST['usuario'])) {
                 $precio = $_POST['precio'];
                 $med = $_POST['med'];
                 $usuario = $_POST['usuario'];
@@ -37,7 +38,7 @@
                     $con = new PDO($dns,$user,$pass);
 
                 
-                    $row = $con->query("SELECT * FROM clientes WHERE usuario='$usuario'and contraseña='$contraseña'");
+                    $row = $con->query("SELECT * FROM clientes WHERE usuario='$usuario'");
     
                     
                     $contador = 0;

@@ -15,16 +15,15 @@
                echo "<input type=text name=usuario ><br/>";
                echo "Contrase&ntilde;a:<br/>";
                 echo "<input type=password name=contraseña><br/><br/>";
-                // variables importadas
-                //echo "<input type = hidden name=med value=$med >";
-                //echo "<input type = hidden name=precio value=$precio >";
+                
                 echo "<input type=submit value=Entrar id=boton >";
             echo"</fieldset>";
         echo "</form>";
+
         
-            if (isset($_POST['usuario'])) {
-                //$precio = $_POST['precio'];
-                //$med = $_POST['med'];
+        
+           if (isset($_POST['usuario'])) {
+                
                 $usuario = $_POST['usuario'];
                 $contraseña = $_POST['contraseña'];
 
@@ -35,7 +34,7 @@
                     $con = new PDO($dns,$user,$pass);
 
                 
-                    $row = $con->query("SELECT * FROM clientes WHERE usuario='$usuario'and contraseña='$contraseña'");
+                    $row = $con->query("SELECT * FROM clientes WHERE usuario='$usuario'");
     
                     
                     $contador = 0;
