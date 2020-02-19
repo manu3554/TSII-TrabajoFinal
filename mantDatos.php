@@ -57,7 +57,7 @@
             echo "<br/><br/><br/>";
             echo "<h2>COMPRAS POR CADA USUARIO</h2>";
             echo "<table style='border:1px solid black'>";
-            echo "<tr><th>NombreProducto</th><th>NombreRecibe</th><th>Direccion</th><th>Distrito</th><tr>";
+            echo "<tr><th>Usuario</th><th>NombreProducto</th><th>PrecioUnitario</th><th>NombreRecibe</th><th>Direccion</th><th>Distrito</th><tr>";
 
             class TableRows2 extends RecursiveIteratorIterator{
                 function _construct($it){
