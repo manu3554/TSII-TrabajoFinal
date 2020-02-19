@@ -35,13 +35,12 @@
                     $con = new PDO($dns,$user,$pass);
 
                 
-                    $row = $con->query("SELECT * FROM clientes WHERE usuario='$usuario'and contraseña='$contraseña'");
+                    $row = $con->query("SELECT * FROM clientes WHERE usuario='$usuario'");
     
                     
                     $contador = 0;
-                    while ($rows= $row->fetch()) {
+                    while ($rows=$row->fetch()){
                         $contador = $contador+1;
-                        
                     }
     
                     if($contador>0 ){
